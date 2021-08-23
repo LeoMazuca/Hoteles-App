@@ -1,0 +1,152 @@
+::-webkit-scrollbar {
+    display: none;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+#map{
+    height: 100%;
+}
+
+.hotelList{
+    position: absolute;
+    top: 55px;
+    left: -21%;
+    width: 20%;
+    height: calc(100vh - 60px);
+    border: 2px solid black;
+    z-index: 5;
+    color: white;
+    background-color: #333;
+    background-image: linear-gradient(180deg, #02010a 0%, #04052e 100%);
+    /* opacity: .8; */
+    /*border-radius: 20px;*/
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    transition: all ease-in-out .5s;
+}
+.show-menu{
+    left: 0px;
+    position: absolute;
+    top: 55px;
+    width: 20%;
+    height: calc(100vh - 60px);
+    border: 2px solid black;
+    z-index: 5;
+    color: white;
+    background-color: #333;
+    background-image: linear-gradient(180deg, #02010a 0%, #04052e 100%);
+    /* opacity: .8; */
+    /*border-radius: 20px;*/
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    transition: all ease-in-out .3s;
+}
+.hotelList .header h3{
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+.header{
+    border-bottom: 3px solid rgb(96, 101, 102);
+    width: 20%;
+    height: fit-content;
+    text-align: center;
+    background-color: #000;
+    position: fixed;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius:0 ;
+}
+.menuClose{
+    position: fixed;
+    left: 0%;
+    width: 50px;
+    top: 55px;
+    z-index: 10;
+    transition: all ease-in-out .3s;
+}
+.menu{
+    position: fixed;
+    left: 20%;
+    width: 50px;
+    top: 55px;
+    z-index: 10;
+    transition: all ease-in .5s;
+}
+#toggle > i{
+    font-size: 2rem;
+    width: 30px;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.hotel_names{
+    flex: 1;
+    padding: 2rem;
+    padding-top: 15px;
+}
+.hotel_names h4{
+    cursor: pointer;
+}
+/* ---------------------------------InfoWindow */
+.info{
+    height: fit-content;
+    width: 250px;
+    background-color: #333;
+    background-image: linear-gradient(180deg, #02010a 0%, #04052e 100%);
+    color: white;
+    padding: 0 2rem;
+}
+.info h2{
+    background-color: rgba(3, 3, 3, .2)  !important;
+    padding: 10px;
+}
+.info h3{
+    border-bottom: 2px solid lightblue !important;
+}
+.gm-style-iw{
+    background-color: #333 !important;
+    background-image: linear-gradient(180deg, #02010a 0%, #04052e 100%) !important;
+    box-shadow: 0 2px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.gm-ui-hover-effect {
+    opacity: 1 !important;
+    top: 0px !important;
+    right: 0px !important;
+    margin: 3px !important;
+    background-color: #04052e !important;
+    border-radius: 50%;
+    color: white !important;
+}
+/* ------------------------------Hotel Image */
+.gm-style img {
+    opacity: 1 !important;
+    width: 100%;
+}
+/* ESTRELLAS */
+.fa-star{
+    color: yellow;
+}
+.fa-star-half-alt{
+    color: yellow;
+}

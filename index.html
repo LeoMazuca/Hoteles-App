@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxuh_DPSIVsHbCm2Nb8X20WXHZrofh2yo&map_ids=4e2e0d4fb4188733&callback=initMap" type="text/javascript"></script>
+    <title>Google Maps</title>
+    <link rel="shortcut icon" href="hotel.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hotelList" id="menu">
+        <div class="header">
+                <h3>Hoteles de Torreón</h3>
+        </div>
+        <div class="hotel_names" id="hotel_names"></div>
+        <div class="menuClose" id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="showHotels.js"></script>
+</body>
+</html>
